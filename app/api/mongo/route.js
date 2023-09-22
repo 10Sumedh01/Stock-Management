@@ -18,7 +18,7 @@ const client = new MongoClient(uri);
     const query = {  };
     const movie = await movies.find(query).toArray();
 
-    console.log(movie);
+    // console.log(movie);
     return NextResponse.json({movie});
   } finally {
     // Ensures that the client will close when you finish/error

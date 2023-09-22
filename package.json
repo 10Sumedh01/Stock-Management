@@ -1,9 +1,12 @@
 {
+  "homepage": "https://10Sumedh01.github.io/Stock-Management",
   "name": "stock-management",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
@@ -17,5 +20,8 @@
     "react-dom": "18.2.0",
     "react-toastify": "^9.1.3",
     "tailwindcss": "3.3.3"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.0.0"
   }
 }

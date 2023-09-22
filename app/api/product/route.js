@@ -17,7 +17,7 @@ export async function GET(request) {
     const query = {};
     const allProducts = await inventory.find(query).toArray();
 
-    console.log(allProducts);
+    // console.log(allProducts);
     return NextResponse.json({ allProducts });
   } finally {
     // Ensures that the client will close when you finish/error
@@ -41,7 +41,7 @@ export async function POST(request) {
       const query = {};
       const product = await inventory.insertOne(body);
   
-      console.log(product );
+      // console.log(product );
       return NextResponse.json({ product , ok:true});
     } finally {
       // Ensures that the client will close when you finish/error
